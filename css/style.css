@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows: 100px 800px 100px;
+    grid-template-areas: 
+        "he na"
+        "at at"
+        "fo fo";
+}
+
+nav {
+    grid-area: na;
+    position: relative;
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    background-color: grey;
+
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800px;
+    position: absolute;
+    align-items: center;
+    list-style: none;
+    top: -800px;
+    right: 0px;
+    width: 200px;
+    background-color: grey;
+    transition: all 0.5s;
+}
+
+.nav_links li {
+            list-style: none;
+}
+
+.banana_burger img {
+    width: 60px;
+    height: 30px;
+    margin: -5px;
+    transition: all 0.5s;
+    background-color: grey;
+}
+
+
+.toggle #banana2 {
+    opacity: 0;
+}
+
+.toggle #banana1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle #banana3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.banana_burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-active {
+    transform: translateY(900px);
+}
