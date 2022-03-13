@@ -8,7 +8,8 @@
 #grid_wrapper_frontpage{
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 1000px 700px 1000px 100px;
+    grid-template-rows: 100px 700px 800px 700px 100px;
+    gap: 60px;
     grid-template-areas: 
         "he na"
         "a1 a1"
@@ -54,6 +55,64 @@ a {text-decoration: none;}
     right: 10px;
 }
 
+#daily_monkey {
+    grid-area: dm;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#monkey_card {
+    background-image: url(../img/giuliano-gabella-3QV_FNhOgeA-unsplash.jpg);
+    background-size:cover;
+    width: 600px;
+    height: 800px;
+    border: 4px grey solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#monkey_card p {
+    color: white;
+    text-shadow: 2px 2px grey;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 15px; 
+    border-radius: 15px;
+}
+
+#monkey_today {
+    font-family: impact;
+    font-size:xxx-large;
+    top: 30px;
+}
+
+#species {
+    font-family: impact;
+    font-size:xx-large;
+    bottom: 230px;
+}
+
+#scientific_name{
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    bottom: 130px;
+}
+
+#learn_more {
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    bottom: 40px;
+    position:absolute;
+    text-shadow: 2px 2px grey;
+}
+
 .flex_wrapper {
     display: flex;
     flex-direction: column;
@@ -62,6 +121,24 @@ a {text-decoration: none;}
     padding: 40px;;
     gap: 20px;
     position: relative;
+}
+
+.article_box { 
+    color: white;
+    display: flex;
+    width: 90vw;
+    margin-bottom: 0px;
+    height: 10vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: grey;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black ;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px black;
 }
 
 .article_img {
@@ -174,7 +251,7 @@ nav {
 
     #grid_wrapper_frontpage {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px 100px 400px 400px 100px;
+        grid-template-rows: 50px 100px 800px 600px 100px;
         grid-template-areas: 
         
         "he he"
@@ -196,6 +273,10 @@ nav {
     }
     
     .article_img {
+        width: 700px;
+    }
+
+    .article_box {
         width: 700px;
     }
 
