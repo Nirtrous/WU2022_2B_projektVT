@@ -86,7 +86,7 @@ a {text-decoration: none;}
 #monkey_today {
     font-family: impact;
     font-size:xxx-large;
-    top: 30px;
+    top: 40px;
 }
 
 #species {
@@ -107,7 +107,7 @@ a {text-decoration: none;}
     font-size:xx-large;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: white;
+    color: turquoise;
     bottom: 40px;
     position:absolute;
     text-shadow: 2px 2px grey;
@@ -141,6 +141,23 @@ a {text-decoration: none;}
     text-shadow: 2px 2px black;
 }
 
+.article_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.flex_wrapper:hover {
+    border-bottom: 5px whitesmoke solid;
+    border-right: 5px whitesmoke solid;
+    border-top: solid 2px whitesmoke;
+    border-left: solid 2px whitesmoke;
+    cursor: pointer;
+}
+
+
 .article_img {
             width: 90vw;
             height: auto;
@@ -164,7 +181,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     height: 800px;
-    position: absolute;
+    position: fixed;
     align-items: center;
     list-style: none;
     top: -800px;
@@ -173,6 +190,7 @@ nav {
     background-color: grey;
     transition: all 0.5s;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 1;
 }
 
 .nav_links li {
@@ -264,7 +282,6 @@ nav {
     }
     
     .nav_links {
-        position: fixed;
         flex-direction: row;
         height: 100px;
         top: 0;
