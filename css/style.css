@@ -8,12 +8,13 @@
 #grid_wrapper_frontpage{
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 700px 800px 700px 100px;
+    grid-template-rows: 100px 700px 800px 600px 700px 100px;
     gap: 60px;
     grid-template-areas: 
         "he na"
         "a1 a1"
         "dm dm"
+        "ad ad"
         "a2 a2"
         "fo fo";
 }
@@ -60,6 +61,8 @@ a {text-decoration: none;}
     display: flex;
     justify-content: center;
     padding: 30px;
+    flex-direction: column;
+    align-items: center;
 }
 
 #monkey_card {
@@ -261,6 +264,28 @@ nav {
     color: aqua;
 }
 
+.ad {
+    grid-area: ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.ad_img { 
+    height: 700px;
+    width: 400px;
+    background-image: url(../img/ad_retro-tech.png);
+    background-size: cover;
+    background-position: center;
+    border: 5px whitesmoke solid;
+    display:flex;
+    position: relative;
+    justify-content: center;
+}
+
 @media screen and (min-width: 800px) {
 
     .banana_burger {
@@ -279,6 +304,10 @@ nav {
         "fo fo"
         
         ;
+    }
+
+    .ad {
+        grid-area: dm;
     }
     
     .nav_links {
