@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: rgb(172, 167, 167);
+    background-color: rgb(218, 218, 218);
 }
 
 #grid_wrapper_frontpage{
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px 700px 1000px 1000px 700px 100px;
+    grid-template-rows: 100px 700px 1000px 1000px 700px 400px;
     gap: 0px;
     grid-template-areas: 
         "he na"
@@ -20,6 +20,52 @@ body {
         "ad ad"
         "a2 a2"
         "fo fo";
+}
+
+#article_flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 120px;
+}
+
+#frontpage_nav {
+    color: rgb(12, 56, 6);
+    border-left: rgb(12, 56, 6) 4px solid;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#article_nav {
+    color: whitesmoke;
+    padding: 5px;
+    text-decoration: underline white 2px ;
+    font-size: xx-large;
+    font-family: ChomskyRegular;
+    text-shadow: black 2px 2px;
+}
+
+.nav_article_links {
+    color: whitesmoke;
+    text-shadow: 2px 2px rgb(15, 56, 2) ;
+    font-size: smaller;
+    padding: 5px;
+    border-top: rgb(15, 56, 2) 4px solid;
+    border-radius: 3px;
+    background-color: rgba(2, 95, 22, 0.651);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav_links li a {
+    font-size: xx-large;
+    font-family: ChomskyRegular;
+    color: white;
+    text-shadow: black 2px 2px;
+
 }
 
 header {
@@ -44,8 +90,10 @@ header {
 header p {
         color: white;
         font-family: ChomskyRegular;
-        font-size: xxx-large;
+        font-size: xx-large;
         text-shadow: 2px 2px black;
+        position: absolute;
+        right: 25px;
 }
 
 
@@ -71,6 +119,11 @@ a {
     font-family: impact;
     font-size:xx-large;
 
+}
+
+#logo_header {
+    height: 60px;
+    width: auto;
 }
 
 .smakprov {
@@ -269,13 +322,6 @@ nav {
     transform: translateY(900px);
 }
 
-#article_flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 200px;
-}
 ¨
 .articles {
     display: flex;
@@ -309,7 +355,7 @@ nav {
     background-position: center;
     display:flex;
     justify-content: center;
-    position: relative;
+    
 }
 
 
@@ -323,7 +369,96 @@ nav {
 
 }
 
+footer {
+        grid-area: fo;
+        background: black;
+        position: static;
+        border-top: seagreen 4px solid;
+}
 
+#logo_box_header { 
+    border-radius: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 10px;
+    border: 2px solid seagreen;
+}
+
+
+#logo_box_footer {
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: absolute;
+    margin: 20px;
+}
+
+#social_media_icons {
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: x-large;
+    justify-content: space-around;
+    width: 300px;
+    position: absolute;
+    right: 30px;
+    padding: 0px;
+    gap: 10px;
+    margin-top: 70px;
+    margin-right: 20px;
+}
+
+#social_media_icons a {
+    color: whitesmoke;
+
+}
+
+.footer_list {
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 20px;
+    border-top: 3px solid whitesmoke;
+    margin-top: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer_list li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#follow {
+    border-right:  3px solid whitesmoke;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo_footer {
+    height: 75px;
+    width: auto;
+}
+
+#copyright {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    font-size: small;
+}
 @media screen and (min-width: 800px) {
 
     .banana_burger {
@@ -331,15 +466,14 @@ nav {
     }
 
     #grid_wrapper_frontpage {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 50px 900px 900px 100px;
+        grid-template-columns: 600px 0.4fr 1fr;
+        grid-template-rows: 100px 900px 900px 300px;
         grid-template-areas: 
         
-        "he he"
-        "na na"
-        "a1 dm"
-        "a2 dm"
-        "fo fo"
+        "he na na"
+        "a1 a1 dm"
+        "a2 a2 dm"
+        "fo fo fo"
         
         ;
     }
@@ -364,12 +498,16 @@ nav {
     
     .nav_links {
         flex-direction: row;
-        height: 50px;
+        height: 100px;
         right: 0px;
         width: 100%;
-        position: static;
         top: 0px;
         transition: all 0s;
+        position: absolute;
+    }
+
+    .nav-active {
+        transform: none;
     }
     
     .article_img {
@@ -387,4 +525,70 @@ nav {
         width: 700px;
     }
 
+    header p {
+        color: white;
+        font-family: ChomskyRegular;
+        font-size: xxx-large;
+        text-shadow: 2px 2px black;
+        position: absolute;
+        left: 150px;
+    }
+
+    #copyright {
+        margin-left: 100px;
+    }
+
+    .footer_list {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    
+    #social_media_icons {
+        font-size: xx-large;
+        width: 500px;
+        right: 30px;
+        padding: 30px;
+        gap: 30px;
+        margin-top: 20px;
+        margin-right: 100px;
+    }
+
+    #logo_box_footer {
+        height: 120px;
+        width: 120px;
+        margin-left: 100px;
+    }
+
+    #logo_footer {
+        height: 100px;
+    }
+
+    
+    #article_flexbox {
+        flex-direction: row;
+        height: 100px;
+        width: 475px;
+        position: absolute;
+    }
+
+    .nav_article_links {
+        text-shadow: 1px 1px rgb(15, 56, 2) ;
+        font-size: xx-small;
+        border-left: rgb(15, 56, 2) 4px solid;
+        border-top: none;
+        height: 50px;
+        border-radius: 3px;
+        padding: 13px;
+    
+    }
+
+    #frontpage_nav {
+        border-bottom: rgb(12, 56, 6) 4px solid;
+        border-left: none;
+    }
+
+    #logo_box_header {
+        left: 20px;
+    }
 }
