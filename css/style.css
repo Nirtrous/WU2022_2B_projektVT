@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(172, 167, 167);
+}
 
 #grid_wrapper_frontpage{
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px 700px 800px 600px 700px 100px;
+    grid-template-rows: 100px 700px 1000px 1000px 700px 100px;
     gap: 0px;
     grid-template-areas: 
         "he na"
@@ -150,9 +153,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;;
+    padding: 40px;
     gap: 20px;
     position: relative;
+    background-color: whitesmoke;
+    border-left:seagreen solid 5px;
+    border-top: seagreen solid 5px;
 }
 
 .article_box { 
@@ -181,13 +187,6 @@ a {
 
 }
 
-.flex_wrapper:hover {
-    border-bottom: 5px whitesmoke solid;
-    border-right: 5px whitesmoke solid;
-    border-top: solid 2px whitesmoke;
-    border-left: solid 2px whitesmoke;
-    cursor: pointer;
-}
 
 
 .article_img {
@@ -210,6 +209,12 @@ nav {
     z-index: 1;
 
 }
+
+#desktop_ad {
+    display: none;
+}
+
+
 
 .nav_links {
     display: flex;
@@ -294,7 +299,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 
 .ad_img { 
@@ -303,10 +307,20 @@ nav {
     background-image: url(../img/ad_retro-tech.png);
     background-size: cover;
     background-position: center;
-    border: 5px whitesmoke solid;
     display:flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
+}
+
+
+.ad_box {
+        display:flex;
+        height: 740px;
+        background: whitesmoke;
+        width: 400px;
+        border-top: seagreen 5px solid;
+        border-left: seagreen 5px solid;
+
 }
 
 
@@ -318,7 +332,7 @@ nav {
 
     #grid_wrapper_frontpage {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 800px 600px 100px;
+        grid-template-rows: 100px 50px 900px 900px 100px;
         grid-template-areas: 
         
         "he he"
@@ -329,6 +343,20 @@ nav {
         
         ;
     }
+    
+    .flex_wrapper {
+        margin: 40px;
+        border-radius: 20px;
+    }
+
+    .flex_wrapper:hover {
+        border-bottom: 5px whitesmoke solid;
+        border-right: 5px whitesmoke solid;
+        border-top: solid 2px whitesmoke;
+        border-left: solid 2px whitesmoke;
+        cursor: pointer;
+    }
+    
 
     .ad {
         grid-area: dm;
@@ -336,17 +364,25 @@ nav {
     
     .nav_links {
         flex-direction: row;
-        height: 100px;
+        height: 50px;
         right: 0px;
         width: 100%;
         position: static;
         top: 0px;
+        transition: all 0s;
     }
     
     .article_img {
         width: 700px;
     }
 
+    #desktop_ad {
+        display: flex;
+    }
+
+    #mobile_ad {
+        display: none;
+    }
     .article_box {
         width: 700px;
     }
