@@ -40,6 +40,8 @@ body {
     align-items: center;
 }
 
+
+
 #article_nav {
     color: whitesmoke;
     padding: 5px;
@@ -47,6 +49,7 @@ body {
     font-size: xx-large;
     font-family: ChomskyRegular;
     text-shadow: black 2px 2px;
+    padding-top: 30px;
 }
 
 .nav_article_links {
@@ -272,7 +275,6 @@ nav {
 .nav_links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     height: 800px;
     position: fixed;
     align-items: center;
@@ -286,8 +288,18 @@ nav {
     z-index: 1;
 }
 
+#daily_monkey_nav {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
 .nav_links li {
             list-style: none;
+}
+
+#about_us_nav {
+    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .banana_burger img {
@@ -322,22 +334,6 @@ nav {
     transform: translateY(900px);
 }
 
-¨
-.articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-    position: absolute;
-    align-items: center;
-    list-style: none;
-    top: -800px;
-    right: 0px;
-    width: 150px;
-    background-color: grey;
-    transition: all 0.5s;
-    color: aqua;
-}
 
 .ad {
     grid-area: ad;
@@ -437,6 +433,11 @@ footer {
     gap: 20px;
 }
 
+.footer_list li {
+    list-style: none;
+}
+
+
 .footer_list li a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -459,6 +460,159 @@ footer {
     margin-left: 20px;
     font-size: small;
 }
+
+
+#grid_wrapper_article {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 150px;
+    grid-template-rows: 100px auto 400px;
+    gap: 0px;
+    grid-template-areas: 
+        "he na"
+        "at at"
+        "fo fo";
+}
+
+#main_article {
+    grid-area: at;
+    display: flex;
+    justify-content: center;
+}
+
+#article_canvas {
+    width: 100rem;
+    background-color: whitesmoke;
+    height: 1fr;
+    padding: 30px;
+    display: flex;
+   justify-content: center;
+}
+
+#article_flexwrapper {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+
+#article_description {
+    font-size: large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(75, 75, 75);
+    width: 400px;
+}
+
+#article_headline {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    font-style: italic;
+    width: 400px;
+}
+
+.image_article {
+    width: 450px;
+    border:seagreen 4px solid;
+    border-radius: 10px;
+}
+
+.img_info {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+#article_author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-right: 50px;
+    width: 400px;
+}
+
+#article_author h4 {
+    color:rgb(75, 75, 75);
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#article_dates {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    color:rgb(75, 75, 75);
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 400px;
+}
+
+#article_author_img {
+    background-color: rgb(218, 218, 218);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.article_text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+#paragraph_headline2 {
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+}
+
+#statement {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#statement_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px rgb(75, 75, 75) solid;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+#statement_text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+#article_biologist {
+    width: 150px;
+    border: 2px solid seagreen;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#paragraph_headline3 {
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+}
+
+.dividers {
+    display: flexbox;
+    height: 10px;
+    background-color: seagreen;
+    width: 450px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 @media screen and (min-width: 800px) {
 
     .banana_burger {
@@ -477,6 +631,23 @@ footer {
         
         ;
     }
+
+    #grid_wrapper_article {
+        grid-template-columns: 600px 0.4fr 1fr;
+        grid-template-rows: 100px auto 300px;
+        grid-template-areas: 
+        
+        "he na na"
+        "at at at"
+        "at at at"
+        "fo fo fo"
+        
+        ;
+    }
+
+    #article_flexwrapper {
+        width: 700px;
+    }
     
     .flex_wrapper {
         margin: 40px;
@@ -491,6 +662,46 @@ footer {
         cursor: pointer;
     }
     
+    #paragraph_headline2{
+        font-size: xx-large;
+    }
+
+    #paragraph_headline3{
+        font-size: xx-large;
+    }
+
+   #article_canvas {
+        margin: 10px;
+        border-left: seagreen 10px solid;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+   }
+
+   #article_description {
+    font-size: x-large;
+    width: 700px;
+    }
+
+    #article_headline {
+    font-size: xxx-large;
+    width: 600px;
+    }
+
+    
+    .image_article {
+    width: 650px;
+    border:seagreen 4px solid;
+    border-radius: 10px;
+    }
+
+    #article_author {
+        margin-right: 200px
+    }
+
+    .dividers {
+        width: 900px;
+    }
 
     .ad {
         grid-area: dm;
@@ -570,6 +781,8 @@ footer {
         height: 100px;
         width: 475px;
         position: absolute;
+        padding-top: 0px;
+        margin-left: 250px;
     }
 
     .nav_article_links {
@@ -586,9 +799,20 @@ footer {
     #frontpage_nav {
         border-bottom: rgb(12, 56, 6) 4px solid;
         border-left: none;
+        margin-left: 50px;
     }
 
     #logo_box_header {
         left: 20px;
+    }
+
+    #daily_monkey_nav {
+        margin-left: 600px;
+        margin-top: 0px;
+    }
+
+    #about_us_nav {
+        margin-left: 50px;
+        margin-top: 0px;
     }
 }
