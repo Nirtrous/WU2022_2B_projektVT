@@ -479,7 +479,7 @@ footer {
     justify-content: center;
 }
 
-#article_canvas {
+.canvas {
     width: 100rem;
     background-color: whitesmoke;
     height: 1fr;
@@ -488,7 +488,7 @@ footer {
    justify-content: center;
 }
 
-#article_flexwrapper {
+.universal_flexwrapper {
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -519,6 +519,7 @@ footer {
 .img_info {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
+    padding-left: 20px;
 }
 
 #article_author {
@@ -613,6 +614,207 @@ footer {
     padding: 5px;
 }
 
+#grid_wrapper_daily_monkey {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 150px;
+    grid-template-rows: 100px auto 400px;
+    gap: 0px;
+    grid-template-areas: 
+        "he na"
+        "pt pt"
+        "fo fo";
+}
+
+#current_daily_monkey {
+    grid-area: pt;
+    display: flex; 
+    justify-content: center;
+}
+
+#daily_monkey_date {
+    font-size: xx-large;
+    font-style: italic;
+    color: rgb(75, 75, 75);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tarsier {
+    font-size: xxx-large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+#classification {
+    background-color: rgb(218, 218, 218);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 5px solid seagreen;
+}
+
+#species {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#terms {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+#terms li{
+    border-bottom: 3px solid seagreen;
+    padding: 5px;
+}
+
+#names li{
+    border-bottom: 3px solid seagreen;
+    padding: 5px;
+}
+
+#names {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+#img_tarsier {
+    width: 350px;
+    border-radius: 20px;
+}
+
+#biology {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.daily_monkey_headlines {
+    font-size: xx-large;
+    font-style: italic;
+    padding-left: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.daily_monkey_text {
+    font-size: medium;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 500px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.daily_monkey_habitat {
+    font-size: small;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 250px;
+}
+
+#biology_picture {
+    width: 400px;
+    border: 4px solid seagreen;
+    border-radius: 10px;
+}
+
+#habitat {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#distribution {
+    width: 400px;
+    border: 4px solid seagreen;
+    border-radius: 30px;
+}
+
+#habitat_info {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#habitat_info p{
+    font-size: medium;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 20px;
+}
+
+#iniatives {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+
+#facts {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#conservation_status {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#status_box {
+    display: flex;
+    gap: 30px;
+    align-items: space-around;
+    width: 300;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#habitat_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conservation_status_current {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    font-size: xxx-large;
+    background-color: rgb(90, 24, 24);
+    border: 7px rgb(10, 10, 10) solid;
+    border-radius: 90px;
+}
+
+.foundation {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+}
+
 @media screen and (min-width: 800px) {
 
     .banana_burger {
@@ -639,13 +841,24 @@ footer {
         
         "he na na"
         "at at at"
-        "at at at"
         "fo fo fo"
         
         ;
     }
 
-    #article_flexwrapper {
+    
+    #grid_wrapper_daily_monkey {
+        grid-template-columns: 600px 0.4fr 1fr;
+        grid-template-rows: 100px auto 300px;
+        grid-template-areas: 
+        
+        "he na na"
+        "pt pt pt"
+        "fo fo fo"
+        ;
+    }
+
+    .universal_flexwrapper {
         width: 700px;
     }
     
@@ -670,7 +883,7 @@ footer {
         font-size: xx-large;
     }
 
-   #article_canvas {
+   .canvas {
         margin: 10px;
         border-left: seagreen 10px solid;
         border-top-left-radius: 10px;
@@ -814,5 +1027,15 @@ footer {
     #about_us_nav {
         margin-left: 50px;
         margin-top: 0px;
+    }
+
+    #classification {
+        flex-direction: row;
+        width: 700px;
+    }
+
+    #habitat {
+        flex-direction: row;
+        gap: 100px;
     }
 }
