@@ -40,6 +40,10 @@ body {
     align-items: center;
 }
 
+ul {
+    list-style: none;
+}
+
 
 
 #article_nav {
@@ -115,6 +119,11 @@ header p {
 
 a {
     text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 .rubrik {
@@ -341,6 +350,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: red;
 }
 
 .ad_img { 
@@ -815,6 +825,23 @@ footer {
     font-size: x-large;
 }
 
+#grid_wrapper_about_us {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 150px;
+    grid-template-rows: 100px auto 400px;
+    gap: 0px;
+    grid-template-areas: 
+        "he na"
+        "au au"
+        "fo fo";
+}
+
+#about_us {
+    grid-area: au;
+    display: flex; 
+    justify-content: center;
+}
+
 @media screen and (min-width: 800px) {
 
     .banana_burger {
@@ -857,6 +884,19 @@ footer {
         "fo fo fo"
         ;
     }
+
+    
+    #grid_wrapper_about_us {
+        grid-template-columns: 600px 0.4fr 1fr;
+        grid-template-rows: 100px auto 300px;
+        grid-template-areas: 
+    
+        "he na na"
+        "au au au"
+        "fo fo fo"
+    
+    }
+
 
     .universal_flexwrapper {
         width: 700px;
