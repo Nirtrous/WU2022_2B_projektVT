@@ -7,3 +7,11 @@ function toggleMenu() {
 }
 
 banana_burger.addEventListener('click', toggleMenu)
+
+const newsletter = document.querySelector('#newsletter_button')
+
+function togglefill() {
+    newsletter.classList.toggle('toggle') 
+}
+
+newsletter.addEventListener('click', togglefill)
