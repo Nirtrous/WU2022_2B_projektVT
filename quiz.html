@@ -40,7 +40,7 @@
         <section id="quiz">
             <div id="canvas_quiz">
                 <div class="universal_flexwrapper">
-                    <h1>Daily quiz 2022/03/07</h1>
+                    <h1 id="quiz_headline">Daily quiz 2022/03/07</h1>
 
                     <h2 class="questions">1. Which of the following apes is closest related to us humans?</h2>
                     <div class="image_box">
@@ -93,45 +93,55 @@
                         <button class="answer-btn false-answer">2. They eat them whole</button>
                     </div>
                     <div class="dividers"></div>
-                    <h7 class="questions">Final Results</h7>
-                    <ul>
-                        <li class="final_answers">
-                            <p class="question_numbers">1.</p>
-                            <div class="final_answer">
-                                <div class="answer_line_1"></div>
-                                <div class="answer_line_2"></div>
-                            </div>
-                        </li>
-                        <li class="final_answers">
-                            <p class="question_numbers">2.</p>
-                            <div class="final_answer">
-                                <div class="answer_line_1"></div>
-                                <div class="answer_line_2"></div>
-                            </div>
-                        </li>
-                        <li class="final_answers">
-                            <p class="question_numbers">3.</p>
-                            <div class="final_answer">
-                                <div class="answer_line_1"></div>
-                                <div class="answer_line_2"></div>
-                            </div>
-                        </li>
-                        <li class="final_answers">
-                            <p class="question_numbers">4.</p>
-                            <div class="final_answer">
-                                <div class="answer_line_1"></div>
-                                <div class="answer_line_2"></div>
-                            </div>
-                        </li>
-                        <li class="final_answers">
-                            <p class="question_numbers">5.</p>
-                            <div class="final_answer">
-                                <div class="answer_line_1"></div>
-                                <div class="answer_line_2"></div>
-                            </div>
-                        </li>
-                    </ul>
-
+                    <div id="score_card">
+                        <div id="branding">
+                            <img id="logo_score_card"src="img/Logo_PS.png" alt="logo primate source">
+                            <p id="brand_name">Primate source</p>
+                        </div>
+                        <h7 id="results_headline">Final Results</h7>
+                        <ul>
+                            <li class="final_answers">
+                                <p class="question_numbers">1.</p>
+                                <div class="final_answer">
+                                    <div class="answer_line_1"></div>
+                                    <div class="answer_line_2"></div>
+                                </div>
+                            </li>
+                            <li class="final_answers">
+                                <p class="question_numbers">2.</p>
+                                <div class="final_answer">
+                                    <div class="answer_line_1"></div>
+                                    <div class="answer_line_2"></div>
+                                </div>
+                            </li>
+                            <li class="final_answers">
+                                <p class="question_numbers">3.</p>
+                                <div class="final_answer">
+                                    <div class="answer_line_1"></div>
+                                    <div class="answer_line_2"></div>
+                                </div>
+                            </li>
+                            <li class="final_answers">
+                                <p class="question_numbers">4.</p>
+                                <div class="final_answer">
+                                    <div class="answer_line_1"></div>
+                                    <div class="answer_line_2"></div>
+                                </div>
+                            </li>
+                            <li class="final_answers">
+                                <p class="question_numbers">5.</p>
+                                <div class="final_answer">
+                                    <div class="answer_line_1"></div>
+                                    <div class="answer_line_2"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button id="share_results">
+                            <div class="fa-solid fa-share-nodes"></div>
+                            <p >Share your results</p>
+                            <div class="fa-solid fa-share"></div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
