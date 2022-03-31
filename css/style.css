@@ -928,10 +928,10 @@ footer {
 #brand_logos li {
     color: black;
     font-size: 80px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px;
 }
 
 #brand_logos li p{
@@ -1048,20 +1048,10 @@ footer {
     justify-content: center;
 }
 
-#first_image {
+.image_quiz {
     width: 500px;
     height: auto;
     position: absolute;
-    border: 5px seagreen solid;
-    border-radius: 20px;
-}
-
-#second_image {
-    width: 500px;
-    height: auto;
-    position: absolute;
-    opacity: 0;
-    transition: all 0.5s;
     border: 5px seagreen solid;
     border-radius: 20px;
 }
@@ -1072,7 +1062,7 @@ footer {
     top: 10px;
 }
 
-#answers {
+.answer-field {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1088,6 +1078,8 @@ footer {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 20px;
     font-style: italic;
+    font-size: xx-large;
+    color: black;
 }
 
 #canvas_quiz {
@@ -1100,48 +1092,110 @@ footer {
    position: relative;
 }
 
-.correct {
-    width: 75vw;
+.answer-btn {
+    width: 50vw;
+    height: auto;
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
     filter: drop-shadow(5px 5px 5px rgb(75,75,75));
-    border: 1px solid white;
+    border: 4px solid white;
     background-color: white;
     border-radius: 30px;
-    font-size: 1.6vw;
+    font-size: 1.5rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
 }
 
-
-.false {
-    width: 75vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    filter: drop-shadow(5px 5px 5px rgb(75,75,75));
-    height: 10vh;
-    border: 1px solid white;
-    background-color: white;
-    font-size: 1.6vw;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-}
-
-#answers:hover {
+.answer-btn:hover {
     cursor: pointer;
+    filter: brightness(.8);
 }
 
-.toggle .false {
-    background-color: rgb(138, 14, 14);
+.answered .answer-btn:hover {
+    cursor:auto;
+    filter: drop-shadow(5px 5px 5px rgb(75,75,75));
 }
 
-.toggle .correct {
-    background-color: rgb(12, 56, 6);
+.answered .false-answer {
+    background-color: rgb(189, 75, 75);
+    border:rgb(56, 6, 6) 4px solid;
 }
+
+.answered .correct-answer {
+    background-color: rgb(87, 150, 78);
+    border:rgb(12, 56, 6) 4px solid;
+}
+
+.final_answers {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.final_answers .final_answer {
+    width: 5vw;
+    height: 10vh;
+    border: 3px solid black;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.final_answers.correct-answer .final_answer .answer_line_1{
+    background-color: green;
+    opacity:100;
+}
+
+
+.final_answers.correct-answer .final_answer .answer_line_2{
+    background-color: green;
+    opacity: 100;
+}
+
+
+.final_answers.false-answer .final_answer .answer_line_1{
+    background-color:  red;
+    opacity: 100;
+}
+
+.final_answers.false-answer .final_answer .answer_line_2{
+    background-color:  red;
+    opacity: 100;
+}
+
+.answer_line_1 {
+    background-color: black;
+    transform: rotate(-45deg);
+    width: 80px;
+    height: 8px;
+    position: absolute;
+    border-radius: 4px;
+    opacity: 0;
+}
+
+.answer_line_2 {
+    background-color: black;
+    transform: rotate(45deg);
+    width: 80px;
+    height: 8px;
+    position: absolute;
+    border-radius: 4px;
+    opacity: 0;
+}
+
+.question_numbers {
+    color: gray;
+    font-size: 10vh;
+}
+
+
+
 
 
 
@@ -1270,12 +1324,12 @@ footer {
     #brand_logos li:hover {
         color: black;
         font-size: 120px;
-        padding: 20px;
         filter: drop-shadow(2px 2px grey);
         border-right: seagreen 5px solid;
         border-bottom: seagreen 5px solid;
         border-radius: 20px;
         visibility: visible;
+
     }
 
     #donate_button {
@@ -1430,17 +1484,11 @@ footer {
         gap: 100px;
     }
 
-    #answers {
+    .answer-field {
         flex-direction: row;
     }
 
-    .correct {
-        width: 250px;
-        height: 100px;
-    }
-
-    .false {
-        width: 250px;
-        height: 100px;
+    .answer-btn {
+        width: 20vw;
     }
 }

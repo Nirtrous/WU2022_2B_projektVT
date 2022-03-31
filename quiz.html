@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9909374578.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chomsky" type="text/css"/>
@@ -40,17 +41,97 @@
             <div id="canvas_quiz">
                 <div class="universal_flexwrapper">
                     <h1>Daily quiz 2022/03/07</h1>
+
                     <h2 class="questions">1. Which of the following apes is closest related to us humans?</h2>
                     <div class="image_box">
-                        <img id="first_image" src="img/jorge-salvador-QZNWXIFcA_M-unsplash.jpg" alt="image of human">
-                        <img id="second_image" src="img/rishi-ragunathan-fs6NPHYMN7o-unsplash.jpg" alt="image of chimp">   
+                        <img class="image_quiz" src="img/jorge-salvador-QZNWXIFcA_M-unsplash.jpg" alt="image of human">    
                     </div>
-                    <div id="answers">
-                        <p class="false">1. Gibbon</p>
-                        <p class="correct">X. Chimpanzee</p>
-                        <p class="false">2. Orangutan</p>
+                    <div class="answer-field" id="answers-1">
+                        <button class="answer-btn false-answer">1. Gibbon</button>
+                        <button class="answer-btn correct-answer">X. Chimpanzee</button>
+                        <button class="answer-btn false-answer">2. Orangutan</button>
                     </div>
                     <div class="dividers"></div>
+
+                    <h3 class="questions">2. In which country can you find the lemur?</h3>
+                    <div class="image_box">
+                        <img class="image_quiz" src="img/sebastian-klein-C3sCcGWW1xE-unsplash.jpg" alt="image of human">   
+                    </div>
+                    <div class="answer-field" id="answers-2">
+                        <button class="answer-btn correct-answer">1. Madagascar</button>
+                        <button class="answer-btn false-answer">X. Brazil</button>
+                        <button class="answer-btn false-answer">2. Congo</button>
+                    </div>
+                    <div class="dividers"></div>
+                    <h4 class="questions">3. In 2012 the Philippine tarsier was reclassified from Simia syrichita to what name?</h4>
+                    <div class="image_box">
+                        <img class="image_quiz" src="img/deb-dowd-6i1xgcTRaQI-unsplash.jpg" alt="image of philippine tarsier">
+                    </div>
+                    <div class="answer-field" id="answers-3">
+                        <button class="answer-btn correct-answer">1. Carlito syrichita</button>
+                        <button class="answer-btn false-answer">X. Simia tarsus</button>
+                        <button class="answer-btn false-answer">2. Brutus atars</button>
+                    </div>
+                    <div class="dividers"></div>
+                    <h5 class="questions">4. What monkey is this?</h5>
+                    <div class="image_box">
+                        <img class="image_quiz" src="img/alex-guillaume-0MC0o-xLucM-unsplash.jpg" alt="image of mystery monkey">   
+                    </div>
+                    <div class="answer-field" id="answers-4">
+                        <button class="answer-btn false-answer">1. Baboon</button>
+                        <button class="answer-btn false-answer">X. Golden Snub-nose Monkey</button>
+                        <button class="answer-btn correct-answer">2. Squirrel Monkey</button>
+                    </div>
+                    <div class="dividers"></div>
+                    <h6 class="questions">5. How do monkeys peel their bananas?</h6>
+                    <div class="image_box">
+                        <img class="image_quiz" src="img/mike-dorner-sf_1ZDA1YFw-unsplash.jpg" alt="image of banana">   
+                    </div>
+                    <div class="answer-field" id="answers-5">
+                        <button class="answer-btn false-answer">1. From tip to bottom</button>
+                        <button class="answer-btn correct-answer">X. From bottom to tip</button>
+                        <button class="answer-btn false-answer">2. They eat them whole</button>
+                    </div>
+                    <div class="dividers"></div>
+                    <h7 class="questions">Final Results</h7>
+                    <ul>
+                        <li class="final_answers">
+                            <p class="question_numbers">1.</p>
+                            <div class="final_answer">
+                                <div class="answer_line_1"></div>
+                                <div class="answer_line_2"></div>
+                            </div>
+                        </li>
+                        <li class="final_answers">
+                            <p class="question_numbers">2.</p>
+                            <div class="final_answer">
+                                <div class="answer_line_1"></div>
+                                <div class="answer_line_2"></div>
+                            </div>
+                        </li>
+                        <li class="final_answers">
+                            <p class="question_numbers">3.</p>
+                            <div class="final_answer">
+                                <div class="answer_line_1"></div>
+                                <div class="answer_line_2"></div>
+                            </div>
+                        </li>
+                        <li class="final_answers">
+                            <p class="question_numbers">4.</p>
+                            <div class="final_answer">
+                                <div class="answer_line_1"></div>
+                                <div class="answer_line_2"></div>
+                            </div>
+                        </li>
+                        <li class="final_answers">
+                            <p class="question_numbers">5.</p>
+                            <div class="final_answer">
+                                <div class="answer_line_1"></div>
+                                <div class="answer_line_2"></div>
+                            </div>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </section>
@@ -87,5 +168,6 @@
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/quiz.js"></script>
 </body>
 
