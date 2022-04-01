@@ -11,7 +11,7 @@ body {
 #grid_wrapper_frontpage{
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px 700px 1000px 1000px 700px 400px;
+    grid-template-rows: 100px auto auto auto auto 450px;
     gap: 0px;
     grid-template-areas: 
         "he na"
@@ -77,40 +77,43 @@ ul {
 
 header {
      grid-area: he;
-     position: sticky;
-     top: 0px;
+     position: fixed;
      background-image: url(../img/andreas-dress-2Al3_b9GzcI-unsplash.jpg);
      background-position: center;
      background-size: cover;
-     background-repeat: no-repeat;
-     margin: 0px;
-     padding: 0px;
-     bottom: 300px;
      z-index: 1;
      border-bottom: 5px solid darkgreen;
-     border-right: 2.5px solid darkgreen;
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-direction: row;
+     height: 100px;
+     top: 0px;
+     right: 150px;
+     left: 0px;
+     padding: 1vw;
 }
 
 header p {
         color: white;
         font-family: ChomskyRegular;
-        font-size: xx-large;
+        font-size: 8vw;
         text-shadow: 2px 2px black;
-        position: absolute;
-        right: 25px;
+        margin-left: 30px;
 }
 
 
 
 #article_1 {
     grid-area: a1;
+    margin-bottom: 2vh;
+    filter: drop-shadow(4px 4px 4px grey);
 }
 
 #article_2 {
     grid-area: a2;
+    margin-bottom: 2vh;
+    filter: drop-shadow(4px 4px 4px grey);
 }
 
 .flex_wrapper p {
@@ -155,62 +158,69 @@ a:hover {
 #daily_monkey {
     grid-area: dm;
     display: flex;
-    gap: 20px;
-    padding: 30px;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
 }
+
+
 
 #monkey_card {
     background-image: url(../img/giuliano-gabella-3QV_FNhOgeA-unsplash.jpg);
-    background-size:cover;
-    width: 600px;
-    height: 800px;
-    border: 4px grey solid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 69vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    background-position: center;
+    background-color: whitesmoke;
+    border-left: seagreen solid 2vw;
+    border: 2vh solid whitesmoke;
+    filter: drop-shadow(4px 4px 4px grey);
+    margin-bottom: 2vh;
 }
 
 #monkey_card p {
-    color: white;
-    text-shadow: 2px 2px grey;
+    text-shadow: 2px 2px rgb(10, 10, 10);
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 15px; 
-    border-radius: 15px;
 }
 
 #monkey_today {
     font-family: impact;
-    font-size:xxx-large;
-    top: 40px;
+    font-size:10vw;
+    top: 2vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 15px; 
+    border-radius: 15px;
+    color: whitesmoke;
 }
 
 #species {
     font-family: impact;
-    font-size:xx-large;
-    bottom: 230px;
+    font-size:7vw;
+    bottom: 17vh;
+    color: white;
 }
 
 #scientific_name{
-    font-size:xx-large;
+    font-size: 7vw;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
-    bottom: 130px;
+    bottom: 11vh;
+    color: aqua;
 }
 
 #learn_more {
     font-size:xx-large;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: turquoise;
-    bottom: 40px;
+    color: rgb(218, 218, 218);
+    bottom: 4vh;
     position:absolute;
-    text-shadow: 2px 2px grey;
+    text-shadow: 2px 2px black;
 }
 
 .flex_wrapper {
@@ -219,7 +229,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 40px;
-    gap: 20px;
     position: relative;
     background-color: whitesmoke;
     border-left:seagreen solid 5px;
@@ -270,7 +279,7 @@ nav {
     align-items: center;
     background-color: darkgreen;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 1;
 
 }
@@ -359,11 +368,19 @@ footer {
     align-items: center;
     height: 80px;
     width: 80px;
-    position: absolute;
-    left: 10px;
+    margin-left: 2vw;
     border: 2px solid seagreen;
 }
 
+#footer_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    gap: 6vw;
+    height: auto;
+}
 
 #logo_box_footer {
     height: 100px;
@@ -373,8 +390,8 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    position: absolute;
-    margin: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 #social_media_icons {
@@ -382,14 +399,12 @@ footer {
     flex-direction: row;
     color: whitesmoke;
     text-decoration: none;
-    font-size: x-large;
+    font-size: 5vw;
     justify-content: space-around;
-    width: 300px;
-    position: absolute;
-    right: 30px;
+    align-items: center;
+    width: 50vw;
     padding: 0px;
     gap: 10px;
-    margin-top: 70px;
     margin-right: 20px;
 }
 
@@ -405,7 +420,7 @@ footer {
     margin: 30px;
     padding: 20px;
     border-top: 3px solid whitesmoke;
-    margin-top: 150px;
+    margin-top: 6vh;
     margin-right: 20px;
     margin-left: 20px;
     flex-wrap: wrap;
@@ -444,7 +459,7 @@ footer {
 #grid_wrapper_article {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px auto 400px;
+    grid-template-rows: 100px auto 450px;
     gap: 0px;
     grid-template-areas: 
         "he na"
@@ -459,12 +474,12 @@ footer {
 }
 
 .canvas {
-    width: 100rem;
+    width: 100vw;
     background-color: whitesmoke;
     height: 1fr;
     padding: 30px;
     display: flex;
-   justify-content: center;
+    justify-content: center;
 }
 
 .universal_flexwrapper {
@@ -479,18 +494,19 @@ footer {
     font-size: large;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(75, 75, 75);
-    width: 400px;
+    width: 90vw;
 }
 
 #article_headline {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: xx-large;
+    font-size: 8vw;
     font-style: italic;
-    width: 400px;
+    width: 90vw;
 }
 
+
 .image_article {
-    width: 450px;
+    width: 90vw;
     border:seagreen 4px solid;
     border-radius: 10px;
 }
@@ -499,15 +515,16 @@ footer {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
     padding-left: 20px;
+    width: 80vw;
 }
 
 #article_author {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 50px;
-    margin-right: 50px;
-    width: 400px;
+    width: 90vw;
 }
 
 #article_author h4 {
@@ -525,7 +542,7 @@ footer {
     color:rgb(75, 75, 75);
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 400px;
+    width: 90vw;
 }
 
 #article_author_img {
@@ -542,7 +559,8 @@ footer {
     gap: 40px;
     list-style: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;
+    font-size: large;
+    width: 90vw;
 }
 
 #paragraph_headline2 {
@@ -555,6 +573,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    width: 90vw;
 }
 
 #statement_box {
@@ -568,7 +587,7 @@ footer {
 
 #statement_text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large;
+    font-size: large;
 }
 
 #article_biologist {
@@ -588,7 +607,7 @@ footer {
     display: flexbox;
     height: 10px;
     background-color: seagreen;
-    width: 450px;
+    width: 90vw;
     border-radius: 5px;
     padding: 5px;
 }
@@ -1214,7 +1233,8 @@ footer {
     border-radius: 4px;
 }
 
-#quiz_headline {
+
+.quiz_headline {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 20px;
     font-style: italic;
@@ -1242,6 +1262,8 @@ footer {
     filter: drop-shadow(3px 3px 3px darkgray);
 }
 
+
+
 #logo_score_card {
     width: auto;
     height: 4vh;
@@ -1259,25 +1281,70 @@ footer {
 }
 
 
-@media screen and (min-width: 800px) {
+#daily_quiz {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: dq;
+    justify-content: center;
+}
+
+#quiz_card {
+    width: 100vw;
+    height: 70vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: whitesmoke;
+    filter: drop-shadow(3px 3px 3px grey);
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+    flex-direction: column;
+    border-left: seagreen 2vw solid;
+}
+
+#quiz_text {
+    font-size: 10vw;
+    font-family: ChomskyRegular;
+    color: rgb(75, 75, 75);
+    text-shadow: 1px 1px white;
+}
+
+#link_quiz {
+    font-size: 20vw;
+    color: seagreen;
+    filter: brightness(0.8);
+}
+
+@media screen and (min-width: 1200px) {
 
     .banana_burger {
         display: none;
     }
 
     #grid_wrapper_frontpage {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr 300px;
+        grid-template-columns: 600px 1fr 1fr 1fr;
+        grid-template-rows: 100px 450px 450px 400px 400px 350px;
         grid-template-areas: 
         
-        "he na na"
-        "a1 a1 dm"
-        "a1 a1 dm"
-        "a2 a2 dm"
-        "a2 a2 dq"
-        "fo fo fo"
+        "he na na na"
+        "a1 a1 dm dm"
+        "a1 a1 dm dm"
+        "a2 a2 dq dq"
+        "a2 a2 dq dq"
+        "fo fo fo fo"
         
         ;
+    }
+
+    header p {
+        font-size: xx-large;
+    }
+    header {
+        width: 600px;
+        gap: 20px;
+        justify-content: flex-start;
+        
     }
 
     #grid_wrapper_article {
@@ -1335,13 +1402,17 @@ footer {
     .flex_wrapper {
         margin: 40px;
         border-radius: 20px;
-    }
-
-    .flex_wrapper:hover {
         border-bottom: 5px whitesmoke solid;
         border-right: 5px whitesmoke solid;
         border-top: solid 2px whitesmoke;
         border-left: solid 2px whitesmoke;
+    }
+
+    .flex_wrapper:hover {
+        border-left: seagreen solid 5px;
+        border-top: seagreen solid 5px;
+        border-bottom: none;
+        border-right: none;
         cursor: pointer;
     }
     
@@ -1354,7 +1425,7 @@ footer {
     }
 
    .canvas {
-        margin: 10px;
+        margin: 40px;
         border-left: seagreen 10px solid;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -1415,13 +1486,26 @@ footer {
     }
 
     #article_author {
-        margin-right: 200px
+        width: 400;
     }
 
+    #article_dates {
+        width: 400px;
+    }
+
+    .article_text {
+        width: 500px;
+    }
     .dividers {
         width: 900px;
     }
 
+    #statement {
+        width: 500px;
+    }
+    #statement_text {
+        font-size: xx-large;
+    }
     .ad {
         grid-area: dm;
     }
@@ -1460,8 +1544,6 @@ footer {
         font-family: ChomskyRegular;
         font-size: xxx-large;
         text-shadow: 2px 2px black;
-        position: absolute;
-        left: 150px;
     }
 
     #copyright {
@@ -1521,10 +1603,6 @@ footer {
         margin-left: 50px;
     }
 
-    #logo_box_header {
-        left: 20px;
-    }
-
     #daily_monkey_nav {
         margin-left: 600px;
         margin-top: 0px;
@@ -1570,4 +1648,50 @@ footer {
         top: 40px;
     
     }
+
+    #monkey_card {
+        width: 40vw;
+        height: 90vh;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+
+    #monkey_today {
+        font-size: xxx-large;
+    }
+
+    #species {
+        font-size: xx-large;
+    }
+
+    #scientific_name {
+        font-size: xx-large;
+    }
+
+
+    #quiz_card {
+        width: 40vw;
+        height: 40vh;
+    }
+
+    #quiz_text {
+        font-size: xxx-large ;
+        width: 400px;
+    }
+
+    #link_quiz {
+        font-size: xxx-large;
+    }
+
+    #footer_flex {
+        justify-content: flex-end;
+        width: 90vw;
+        gap: 50vw;
+        align-items: center;
+    }
+
+    .img_info {
+        width: 400px;
+    }
 }
+
