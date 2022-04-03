@@ -47,7 +47,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
 }
 
 ul {
@@ -102,11 +101,12 @@ header {
      justify-content: center;
      align-items: center;
      flex-direction: row;
-     height: 100px;
+     height: 15vh;
      top: 0px;
      right: 150px;
      left: 0px;
      padding: 1vw;
+     filter: drop-shadow(0px 2px 2px black);
 }
 
 header p {
@@ -289,13 +289,15 @@ nav {
     grid-area: na;
     position: relative;
     display: flex;
-    height: 100px;
+    height: 15vh;
     justify-content: center;
     align-items: center;
     background-color: darkgreen;
     position: sticky;
     top: 0;
     z-index: 1;
+    width: 1fr;
+    filter: drop-shadow(0px 2px 2px black);
 
 }
 
@@ -305,14 +307,16 @@ nav {
 
 
 
+
 .nav_links {
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 85vh;
     position: fixed;
     align-items: center;
+    justify-content: space-around;
     list-style: none;
-    top: -800px;
+    top: -85vh;
     right: 0px;
     width: 150px;
     background-color: darkgreen;
@@ -367,7 +371,7 @@ nav {
 }
 
 .nav-active {
-    transform: translateY(900px);
+    transform: translateY(100vh);
 }
 
 
@@ -1081,7 +1085,7 @@ footer {
 }
 
 #canvas_quiz {
-    width: 100rem;
+    width: 100vw;
     background-color: whitesmoke;
     height: 1fr;
     padding: 30px;
@@ -1297,6 +1301,9 @@ footer {
     flex-direction: column;
     grid-area: dq;
     justify-content: center;
+    margin-bottom: 2vh;
+    filter: drop-shadow(4px 4px 4px grey);
+
 }
 
 #quiz_card {
@@ -1347,13 +1354,12 @@ footer {
         ;
     }
 
-    header p {
-        font-size: xx-large;
-    }
+
     header {
         width: 600px;
         gap: 20px;
         justify-content: flex-start;
+        height: 100px;
         
     }
 
@@ -1439,6 +1445,7 @@ footer {
         border-left: seagreen 10px solid;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        width: 90vw;
 
    }
 
@@ -1447,6 +1454,7 @@ footer {
         border-left: seagreen 10px solid;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        width: 90vw;
    }
 
    #about_us_mission {
@@ -1530,10 +1538,13 @@ footer {
         flex-direction: row;
         height: 100px;
         right: 0px;
-        width: 100%;
+        width: inherit;
+        left: 600px;
         top: 0px;
         transition: all 0s;
-        position: absolute;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0px 2px 2px black);
     }
 
     .nav-active {
@@ -1592,7 +1603,7 @@ footer {
         width: 475px;
         position: absolute;
         padding-top: 0px;
-        margin-left: 250px;
+        margin-left: -120px;
     }
 
     .nav_article_links {
@@ -1655,7 +1666,10 @@ footer {
         width: 30vw;
     }
 
-    
+    nav {
+        filter: none;
+        height: 100px;
+    }
     #share_results {
         height: 100rem;
         width: 300px;
@@ -1774,6 +1788,10 @@ footer {
     
     .image_quiz {
         width: 500px;
+    }
+
+    #frontpage_nav {
+        margin-left: 50px;
     }
 }
 
