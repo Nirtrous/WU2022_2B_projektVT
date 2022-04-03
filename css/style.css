@@ -11,7 +11,7 @@ body {
 #grid_wrapper_frontpage{
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px auto auto auto auto 475px;
+    grid-template-rows: 15vh auto auto auto auto 475px;
     gap: 0px;
     grid-template-areas: 
         "he na"
@@ -47,7 +47,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
 }
 
 ul {
@@ -103,7 +102,7 @@ header {
      align-items: center;
      flex-direction: row;
      height: 15vh;
-     top: 0px;
+     top: 0vh;
      right: 150px;
      left: 0px;
      padding: 1vw;
@@ -482,7 +481,7 @@ footer {
 #grid_wrapper_article {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px auto 475px;
+    grid-template-rows: 15vh auto 475px;
     gap: 0px;
     grid-template-areas: 
         "he na"
@@ -638,7 +637,7 @@ footer {
 #grid_wrapper_daily_monkey {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px auto 475px;
+    grid-template-rows: 15vh auto 475px;
     gap: 0px;
     grid-template-areas: 
         "he na"
@@ -841,7 +840,7 @@ footer {
 #grid_wrapper_about_us {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px auto 475px;
+    grid-template-rows: 15vh auto 475px;
     gap: 0px;
     grid-template-areas: 
         "he na"
@@ -1044,7 +1043,7 @@ footer {
 #grid_wrapper_quiz {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 150px;
-    grid-template-rows: 100px auto 475px;
+    grid-template-rows: 15vh auto 475px;
     gap: 0px;
     grid-template-areas: 
         "he na"
