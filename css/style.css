@@ -105,7 +105,7 @@ ul {
 header {
      grid-area: he;
      position: fixed;
-     background-image: url(../img/andreas-dress-2Al3_b9GzcI-unsplash.jpg);
+     background-image: url(../img/eugene-golovesov--_VkKpSNpuk-unsplash.jpg);
      background-position: center;
      background-size: cover;
      z-index: 1;
@@ -123,10 +123,10 @@ header {
 }
 
 header p {
-        color: white;
+        color: rgb(129, 41, 41);
         font-family: ChomskyRegular;
         font-size: 8vw;
-        text-shadow: 2px 2px black;
+        text-shadow: 2px 2px rgb(255, 6, 6);
         margin-left: 30px;
 }
 
@@ -165,8 +165,22 @@ a:hover {
 }
 
 #logo_header {
-    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: auto;
+    border-radius: 30px;
+    background-color: rgba(245, 245, 245, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: auto;
+    margin-left: 2vw;
+    border: 4px solid rgb(139, 46, 46);
+    filter: drop-shadow(0px 2px 2px rgb(250, 250, 250));
+    
 }
 
 .smakprov {
@@ -346,9 +360,9 @@ nav {
 }
 
 .banana_burger img {
-    width: 100px;
-    height: 40px;
-    margin: -12px;
+    width: auto;
+    height: 45px;
+    margin: -15px;
     transition: all 0.5s;
     background-color: grey;
     background: none;
@@ -385,17 +399,6 @@ footer {
         border-top: seagreen 4px solid;
 }
 
-#logo_box_header { 
-    border-radius: 30px;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 80px;
-    margin-left: 2vw;
-    border: 2px solid seagreen;
-}
 
 #footer_flex {
     display: flex;
@@ -407,18 +410,6 @@ footer {
     height: auto;
 }
 
-#logo_box_footer {
-    height: 100px;
-    width: 100px;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
 #social_media_icons {
     display: flex;
     flex-direction: row;
@@ -427,10 +418,10 @@ footer {
     font-size: 5vw;
     justify-content: space-around;
     align-items: center;
-    width: 50vw;
+    width: 100vw;
     padding: 0px;
     gap: 10px;
-    margin-right: 20px;
+    margin-top: 10px;
 }
 
 #social_media_icons a {
@@ -445,7 +436,7 @@ footer {
     margin: 30px;
     padding: 20px;
     border-top: 3px solid whitesmoke;
-    margin-top: 6vh;
+    margin-top: 2vh;
     margin-right: 20px;
     margin-left: 20px;
     flex-wrap: wrap;
@@ -469,8 +460,15 @@ footer {
 }
 
 #logo_footer {
-    height: 75px;
-    width: auto;
+    height: auto;
+    width: 80px;
+    padding: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
 }
 
 #copyright {
@@ -504,14 +502,13 @@ footer {
     padding: 30px;
     display: flex;
     justify-content: center;
-}
-
-.universal_flexwrapper {
     flex-direction: column;
     align-items: center;
     display: flex;
     gap: 40px;
 }
+
+
 
 #article_description {
     font-size: large;
@@ -600,7 +597,16 @@ footer {
     width: 90vw;
 }
 
-#statement_box {
+
+#statement div {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+#statement_text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -609,13 +615,8 @@ footer {
     padding: 40px;
 }
 
-#statement_text {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-}
-
 #article_biologist {
-    width: 150px;
+    width: inherit;
     border: 2px solid seagreen;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -670,11 +671,12 @@ footer {
     background-color: rgb(218, 218, 218);
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
     border: 5px solid seagreen;
+    flex-wrap: wrap;
 }
 
 #classes {
@@ -827,7 +829,7 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 1000;
     font-size: xxx-large;
-    background-color: rgb(90, 24, 24);
+    background-color: rgb(170, 30, 30);
     border: 7px rgb(10, 10, 10) solid;
     border-radius: 90px;
 }
@@ -859,8 +861,8 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 10vw;
-    background-color: green;
-    border: 10px darkolivegreen solid;
+    background-color: rgb(87, 143, 90);
+    border: 10px rgb(46, 73, 6) solid;
     padding: 10px;
     justify-content: space-around;
     border-radius: 75px;
@@ -871,12 +873,12 @@ footer {
 #logo_about_us {
     width: 100px;
     height: auto;
-    background-color: darkgreen;
+    background-color: rgb(86, 161, 71);
     padding: 20px;
     padding-left: 23px;
     padding-right: 23px;
-    border: olivedrab 5px solid;
-    border-radius: 40px;
+    border: rgb(60, 83, 12) 5px solid;
+    border-radius: 60px;
     filter: drop-shadow(3px 3px 3px);
 }
 
@@ -888,19 +890,17 @@ footer {
     filter: drop-shadow(3px 3px 3px grey);
 }
 
-.about_us_box {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
 .about_us_text {
     font-size: medium;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 90vw;
+}
+
+#about_us_box {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .capitalize {
@@ -953,11 +953,6 @@ footer {
     font-weight: bold;
 }
 
-#contact {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-}
 
 .contact_box {
     display: flex;
@@ -981,7 +976,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: seagreen;
+    background-color: rgb(80, 221, 141);
     padding: 30px;
     font-size: xx-large;
     filter: brightness(0.8) drop-shadow(3px 3px 3px black);
@@ -1556,10 +1551,7 @@ footer {
     }
 
     header p {
-        color: white;
-        font-family: ChomskyRegular;
         font-size: xxx-large;
-        text-shadow: 2px 2px black;
     }
 
     #copyright {
@@ -1574,23 +1566,12 @@ footer {
     
     #social_media_icons {
         font-size: xx-large;
-        width: 500px;
+        width: 700px;
         right: 30px;
         padding: 30px;
         gap: 30px;
-        margin-top: 20px;
-        margin-right: 100px;
     }
 
-    #logo_box_footer {
-        height: 120px;
-        width: 120px;
-        margin-left: 100px;
-    }
-
-    #logo_footer {
-        height: 100px;
-    }
 
     
     #article_flexbox {
@@ -1634,7 +1615,6 @@ footer {
     }
 
     #classification {
-        flex-direction: row;
         width: 800px;
         gap: 20px;
     }
@@ -1678,8 +1658,8 @@ footer {
     }
 
     #monkey_card {
-        width: 40vw;
-        height: 90vh;
+        width: 30vw;
+        height: 79vh;
         margin-top: 40px;
         border-radius: 20px;
     }
